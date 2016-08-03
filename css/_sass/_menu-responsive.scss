@@ -1,0 +1,176 @@
+@media only screen and (min-width: 769px){
+
+	.main-navigation{
+
+			ul{
+
+
+				> li + li{
+		      margin-left: 40px;
+				}
+
+				> .page_item_has_children > a,
+		    > .menu-item-has-children > a {
+		    	padding-right: 18px;
+		    	position: relative;
+
+		      &:after{
+		        content: "";
+		      	display: block;
+		      	border: 5px solid transparent;
+		      	border-top-color: #ca2017;
+		      	position: absolute;
+		      	z-index: 1001;
+		      	right: 0;
+		      	top: 50%;
+		      	margin-top: -2px;
+		      }
+
+		    }
+
+			}
+
+
+			li{
+				position: relative;
+				display: inline-block;
+			}
+
+	}
+
+
+
+
+	/* Sub menus --------------------------------------- */
+
+
+	.main-navigation ul > li > ul:before {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 1000;
+		top: 0px;
+		left: 50%;
+		margin-left: -8px;
+		border: 8px solid transparent;
+		border-bottom-color: #222;
+	}
+
+
+	.page_item_has_children:after,
+  .menu-item-has-children:after {
+  	content: "";
+  	display: block;
+  	border: 6px solid transparent;
+  	border-left-color: rgba(255,255,255,0.4);
+  	position: absolute;
+  	z-index: 1001;
+  	right: 10px;
+  	top: 50%;
+  	margin-top: -6px;
+  	z-index: 10000;
+  }
+
+	.main-navigation ul ul{
+
+		position: absolute;
+		z-index: 10000;
+		display: block;
+		left: -9999px;
+		top: 54px;
+		opacity: 0;
+		z-index: 999;
+		padding-top: 16px;
+		transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+
+		li {
+			width: 240px;
+		}
+	}
+
+	.main-navigation ul > li:hover > ul,
+	.main-navigation ul > li.focus > ul {
+		left: 50%;
+		margin-left: -120px;
+		top: 54px;
+		z-index: 9999;
+	}
+
+	.main-navigation ul ul > li:hover > ul,
+	.main-navigation ul ul > li.focus > ul {
+		left: 100%;
+		margin-left: 0;
+		top: -16px;
+		z-index: 9999;
+	}
+
+
+
+}
+
+
+
+// Submenu mobile
+@media only screen and (max-width: 768px){
+
+
+	ul.nav-menu{
+
+		> li > ul{
+			display: none;
+		}
+
+		> li:hover > ul{
+			display: block;
+		}
+
+		ul{
+
+			ul{
+				display: none;
+			}
+
+
+			li:hover > ul{
+				display: block;
+			}
+
+		}
+
+	}
+
+
+
+
+	/*
+	.main-navigation li:hover{
+
+	}
+
+	.main-navigation ul li{
+		position: relative;
+	}
+
+	.main-navigation ul ul{
+		display: block;
+		opacity: 0.2;
+		position: absolute;
+		width: 100%;
+		top: -99999px;
+		left: 0;
+	}
+
+	.main-navigation ul li:hover{
+		position: static;
+	}
+
+	.main-navigation ul li:hover > ul{
+		display: block;
+		opacity: 1;
+		position: static;
+	}
+	*/
+
+
+
+}

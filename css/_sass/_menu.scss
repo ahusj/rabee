@@ -1,0 +1,155 @@
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+.toggles,
+.mobile-search {
+	display: none;
+}
+
+
+
+.main-navigation{
+	
+  text-align: center;
+	font-size: 0.9em;
+	margin-top: 10px;
+
+  ul{
+
+    margin: 0;
+  	padding: 0;
+
+    > li + li{
+
+      &:before{
+        content: "/";
+      	display: block;
+      	font-size: 15px;
+      	font-weight: 700;
+      	color: #bbb;
+      	position: absolute;
+      	top: 50%;
+      	margin-top: -10px;
+      	left: -25px;
+      }
+
+    }
+
+  }
+
+  ul ul{
+    li:hover > a,
+    li.focus > a {
+    	color: #fff;
+    	opacity: 0.75;
+    }
+  }
+
+
+  li{
+    display: block;
+		position: relative;
+
+
+    &:hover > a,
+    &.focus > a {
+    	cursor: pointer;
+    	color: #ca2017;
+    }
+
+  }
+
+  a{
+    display: inline-block;
+  	padding: 24px 0;
+  	color: #111;
+  	position: relative;
+  }
+
+
+}
+
+
+
+
+
+
+
+/* Sub menus --------------------------------------- */
+
+
+.main-navigation ul > li:hover > ul,
+.main-navigation ul > li.focus > ul {
+	opacity: 1;
+}
+
+.main-navigation ul ul > li:hover > ul,
+.main-navigation ul ul > li.focus > ul {
+	opacity: 1;
+}
+
+
+/*
+.main-navigation ul > li:hover > ul,
+.main-navigation ul > li.focus > ul{
+	display: block;
+}
+
+.main-navigation ul ul{
+	display: none;
+}
+*/
+
+
+.main-navigation ul ul{
+
+  li {
+		width: 100%;
+  	background: #222;
+  	text-align: center;
+  }
+
+  a {
+  	display: block;
+  	padding: 20px;
+  	line-height: 130%;
+  	border-bottom: 1px solid rgba(255,255,255,0.1);
+  	color: #fff;
+  	font-style: italic;
+
+    &:hover{
+      color: #fff;
+    	opacity: 0.75;
+    }
+
+  }
+
+  > li:last-child > a {
+  	border-bottom-width: 0;
+  }
+
+  > li > ul:before {
+  	display: none;
+  }
+
+  > li + li {
+  	margin-left: 0;
+  }
+
+  > li + li:before {
+  	display: none;
+  }
+
+  > .page_item_has_children > a:after,
+  > .menu-item-has-children > a:after {
+  	display: none;
+  }
+
+  .page_item_has_children:hover:after,
+  .menu-item-has-children:hover:after {
+  	border-left-color: #222;
+  	right: -12px;
+  }
+
+}
