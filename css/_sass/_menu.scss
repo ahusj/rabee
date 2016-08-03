@@ -10,7 +10,7 @@
 
 
 .main-navigation{
-	
+
   text-align: center;
 	font-size: 0.9em;
 	margin-top: 10px;
@@ -19,22 +19,6 @@
 
     margin: 0;
   	padding: 0;
-
-    > li + li{
-
-      &:before{
-        content: "/";
-      	display: block;
-      	font-size: 15px;
-      	font-weight: 700;
-      	color: #bbb;
-      	position: absolute;
-      	top: 50%;
-      	margin-top: -10px;
-      	left: -25px;
-      }
-
-    }
 
   }
 

@@ -178,7 +178,7 @@ th {
   padding: 0; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Varela Round", sans-serif; }
 
 .site-branding {
   text-align: left; }
@@ -220,12 +220,12 @@ body {
   .header-image .hero-text h1 {
     font-size: 60px;
     max-width: 700px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 400; }
   .header-image .hero-text h2 {
     max-width: 700px;
     margin-bottom: 40px;
-    font-family: 'Open Sans', sans-serif; }
+    font-family: "Varela Round", sans-serif; }
 
 .social {
   margin-top: 20px; }
@@ -255,16 +255,6 @@ body {
   .main-navigation ul {
     margin: 0;
     padding: 0; }
-    .main-navigation ul > li + li:before {
-      content: "/";
-      display: block;
-      font-size: 15px;
-      font-weight: 700;
-      color: #bbb;
-      position: absolute;
-      top: 50%;
-      margin-top: -10px;
-      left: -25px; }
   .main-navigation ul ul li:hover > a,
   .main-navigation ul ul li.focus > a {
     color: #fff;
@@ -449,6 +439,8 @@ img {
   color: #fff;
   display: inline-block;
   padding: 10px 30px;
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  letter-spacing: 0.15em;
+  border-radius: 8px; }
   .button:hover {
     color: #fff; }
